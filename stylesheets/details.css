@@ -1,0 +1,28 @@
+.account-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        /* Form Styling */
+        .account-form label, .account-form input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .account-form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .account-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }

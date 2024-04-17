@@ -1,0 +1,1153 @@
+* {/* the styling for the default pages for the website */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: math;
+  }
+  
+  body {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #f6e5d5;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #972c8b;
+    background-color: #f6e5d5;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  a:hover{
+    color: #67908d;
+  }
+
+  header{
+    position: fixed ;
+    padding: 0 2rem;
+    background-color: #f6e5d5;
+    width: 100%;
+  }
+
+/* the styling for the nav bar for the website */
+  .navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar .logo a{
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .navbar .links{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .navbar .toggle_btn{
+    color: black;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .action_btn{
+    background-color: #972c8b;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+  }
+
+  .action_btn:hover{
+    scale: 1.05;
+    color: #67908d;
+  }
+
+  .action_btn:active{
+    scale: 0.95;
+  }
+
+  .dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .dropdown_menu.open{
+    display: block;
+height: 465px;
+  }
+  
+  .dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #972c8b;
+  }
+
+  #hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+  }
+
+  /* the styling for the poster section */
+  .poster {
+    width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+  
+}
+
+.content h1 {
+  margin-top: 80px;
+  font-size: 70px;
+  font-weight: 800;
+  font-family: math;
+  color: #b438a1;
+}
+
+.posterabout{
+    width: 100%;
+}
+
+#vizha {
+  margin-top: 25px;
+}
+.button {
+  width: 200px;
+  padding: 15px;
+  margin: 20px 5px;
+  text-align: center;
+  border-radius: 50px;
+  color: #e06b5c;
+  border: 2px solid;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: math;
+}
+
+.button:hover {
+  background: #4e4e4c;
+  color: white;
+  transition: 0.5s;
+}
+
+  /* the styling for the why choose vizha section */
+  .eventDesc{
+    margin-top: 12px;
+    padding: 29px;
+}
+.title1{
+  text-align: center;
+  color: #b438a1;
+  text-shadow: 1px 1px 2px #171515;
+  font-family: math;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardd {
+  width: 325px;
+  background-color: #faebdf;
+  border-radius: 71px;
+  border-color: #b438a1;
+  border-style: solid;
+  overflow: hidden;
+  box-shadow: 18px 2px 50px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.cardd img{
+  width: 100%;
+  height: 30%;
+  border-radius: 68px;
+}
+
+.card-content {
+  padding: 9px;
+  text-align: justify;
+}
+
+
+.card-content h3{
+  font-size: 21px;
+  margin-bottom: 8px;
+  font-family: math;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+  font-family: math;
+}
+
+.card-content .btn{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgb(93 22 100);
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #fff;
+}
+.cardheader{
+  text-align: center;
+  color: #a0243c;
+}
+  /* the styling for the events section */
+  .events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.events img {
+    width: 240px;
+    height: 160px;
+    border: 2px solid #ff3d0036;
+    border-radius: 200px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+
+.events img:hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+.upcomingevent{
+    text-align: center;
+    color: rgb(93 22 100);
+}
+.upcomingevent1{
+    color: #a0243c;
+    font-family: math;
+}
+aside {
+  width: 100%;
+  max-width: 150px;
+  min-width: 100px;
+  float: right;
+  border: #777 solid 1px;
+  background-color: #f6e5d5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 18px 2px 50px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px #fff;
+  font-size: smaller;
+}
+
+aside h4{
+  margin-top: 15px;
+}
+
+aside h3, h4 {
+  text-align: center;
+  font-family: math;
+}
+.vision{
+  text-align: center;
+}
+
+aside p {
+  margin: 5%;
+  font-family: math;
+}
+
+.aside-left {
+  float: left;
+}
+
+.davidTest {
+  margin-top: 25px;
+}
+
+.testimonialpic{
+  width: 100%;
+}
+article p {
+  color: #fff;
+  margin: 18px
+}
+
+.getInvloved ul li {
+  margin: 18px;
+  font-family: math;
+}
+
+.getInvloved {
+  width: 75%;
+  background-color: #faebdf;
+  overflow: hidden;
+  box-shadow: 18px 2px 50px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  margin-left: 12.5%;
+  color: #666;
+  font-family: math;
+  border-radius: 71px;
+  border-color: #b438a1;
+  border-style: solid;
+}
+
+.getInvloved1{
+  color: #a0243c;
+  font-family: math;
+}
+
+.getInvlovedd {
+  width: 97%;
+  background-image: "D:\website\img\bgabout1.jpg";
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 18px 2px 50px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  text-align: justify;
+}
+
+.getInvlovedd p {
+  margin: 30px;
+}
+
+.aboutimages {
+  display: flex;
+  flex-direction: row;
+}
+
+footer{
+  background-color: #5a0b4e;
+  color: #fff;
+  border-style: solid;
+}
+  @media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+      display: none;
+    }
+  
+    .navbar .toggle_btn {
+      display: block;
+    }
+  .content h1{
+    margin-top: -150px;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: math;
+    color: #b438a1;
+  }
+  .content{
+    width: 100%;
+    display: contents;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 15%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  .button {
+    width: 200px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: #e06b5c;
+    border: 2px solid;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: math;
+  }
+}
+  @media (max-width: 576px) {
+    .dropdown_menu {
+      left: 2rem;
+      right: 2rem;
+      width: calc(100% - 4rem); /* Adjust width to fit smaller screens */
+    }
+  }
+
+  @media screen and (min-width: 993px) {
+    .footer-info {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        padding: 50px 0;
+    }
+}
+
+/* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+    .footer-info {
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+
+    .about p , h2{
+    margin-bottom: 25px;
+    }
+
+    .social-media{
+        margin-bottom: 25px;
+    }
+
+    .navbar ul li {
+        margin: 5px;
+    }
+  }
+  
+
+.footer-info .footer {
+    padding: 0 15px;
+}
+
+.footer-info h2{
+    margin-bottom: 20px;
+    font-family: math;
+}
+
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media ul {
+    display: flex;
+}
+
+.social-media ul li a {
+    display: inline-block;
+    margin-right: 50px;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    background-color: white;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.social-media ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.contact ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact ul li span{
+    margin-right: 15px;
+}
+
+
+
+ul ,li {
+    list-style-type: none;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #E3D0BC;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: #f6e5d5;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: math;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 20%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+ /* CSS for signup page */
+  .signup {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f4debf;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign2 {
+    color: #333;
+    text-align: center;
+}
+
+.signupForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.signupForm label {
+    margin-bottom: 8px;
+}
+
+.signupForm input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.signupForm input[type="submit"] {
+    background-color: #b05d9e;
+    color: white;
+    cursor: pointer;
+}
+
+.signupForm p {
+    color: red;
+    text-align: center;
+}
+.password-guidelines {
+    display: none;
+    color: red;
+    /* You can add more styles here to make it look like an alert */
+}
+
+#password:focus + .password-guidelines {
+    display: block;
+}
+
+  /* CSS for login page */
+
+
+  /* CSS for about page */
+.aboutvizha {
+    background-color: #f8d5b5;
+    padding: 40px;
+    border-radius: 70px;
+    text-align: center;
+}
+
+.aboutvizha p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+   text-align: justify;
+}
+
+.aboutvizha img {
+    max-width: 20%;
+    border-radius: 232px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 991px) {
+    .aboutvizha img {
+         max-width: 60%;
+         }
+}
+
+/* Centered Header */
+.aboutcardheader {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    color: #333;
+}
+/* Card container */
+.aboutcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Individual card */
+.aboutcard {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #f4debf;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media screen and (min-width: 991px) {
+.aboutcard {
+    width: calc(25% - 20px); /* 25% width for each card with spacing */
+}
+}
+
+
+
+/* Card image */
+.aboutcard img {
+    max-width: 55%;
+    border-radius: 50%;
+}
+
+/* Card title */
+.aboutcard h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Card description */
+.aboutcard p {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* Grid container */
+@media screen and (min-width: 991px) {
+.aboutgrid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+}
+
+/* Grid items */
+.aboutgrid-item {
+  background-color: #dcb1c0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: justify;
+}
+
+/* Grid item images */
+.aboutgrid-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 153px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+/* Grid item text */
+.aboutgrid-item p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+     /* CSS for events page */
+.eventcard-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.eventcard {
+    width: 300px;
+    background-color: #a1b9a9;
+    border-radius: 149px;
+    border-color: #6f3787;
+    border-style: solid;
+    overflow: hidden;
+    box-shadow: 18px 2px 50px rgba(0, 0, 0, 0.2);
+    margin: 27px;
+    height: 400px;
+}
+.eventcard-content {
+    padding: 9px;
+    text-align: center;
+}
+.eventcardheader{
+    text-align: center;
+    color: #a0243c;
+}
+
+.bookingButtonAlign { 
+    text-align: center;
+    margin-bottom: 21px;
+}
+.eventbookingbutton {
+    align-content: center;
+    background-color: #972c8b; /* Green background */
+    color: white; 
+    margin-top: 18px;
+    padding: 5px 24px; /* Top and bottom padding, left and right padding */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Mouse pointer on hover */
+    text-align: center; /* Center the text inside the button */
+    text-decoration: none; /* No underline on the text */
+    display: inline-block; /* Align elements next to each other */
+    font-size: 16px; /* Font size */
+    transition-duration: 0.4s; /* Transition time for hover effect */
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24), 0 5px 10px 0 rgba(0,0,0,0.19); /* Box shadow for 3D effect */
+}
+
+/* Change background color on mouse-over */
+.eventbookingbutton:hover {
+    background-color: black; /* Darker shade of green */
+}
+.eventcard img{
+    width: 100%;
+    height: 42%;
+    border-radius: 68px;
+}
+/* styling for events details page */
+
+.event-card {
+    background-color: #f4debf;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.event-card .event-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.event-card .event-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.event-card .event-description, .event-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.event-card a.back-button, .event-card a.btn {
+    background-color: #972c8b;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.event-card a.back-button:hover, .event-card a.btn:hover {
+    background-color: #0056b3;
+}
+
+.event-card form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f6e5d5;
+    border-radius: 5px;
+}
+
+.event-card form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.event-card form input[type='number'], 
+.event-card form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.event-card form input[type='submit'] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event-card form input[type='submit']:hover {
+    background-color: #218838;
+}
+
+/*  Styles for Bookings PAGE */
+.bookings {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #b05d9e;
+    border-radius: 10
+    px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bookings h2 {
+color: #333;
+font-size: 24px;
+margin-bottom: 15px;
+text-align: center;
+}
+
+/* Individual Booking Card Style */
+.booking {
+background-color: #f4debf;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+padding: 15px;
+margin-bottom: 20px;
+}
+
+.booking p {
+font-size: 16px;
+line-height: 1.6;
+margin-bottom: 10px;
+color: #555;
+}
+
+/* Welcome Message Styling */
+
+.welcome-message p {
+font-size: 16px;
+text-align: center;
+margin-bottom: 20px;
+}
+/* styles for contact us page*/
+.contact-form-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #a44796;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.contact-form h2 {
+    color: #333;
+    text-align: center;
+}
+
+.contact-form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+box-sizing: border-box; /* To ensure padding doesn't increase the width */
+}
+
+.form-group textarea {
+resize: vertical; /* Allows vertical resizing, useful for longer messages /
+min-height: 100px; / Minimum height for the textarea */
+}
+
+.submit-btn {
+background-color: #f6e5d5;
+color: black;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+display: block;
+width: 100%;
+font-size: 16px;
+}
+
+.submit-btn:hover {
+background-color: #b15fa0;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+.contact-form-section {
+padding: 10px;
+}
+}
+/* styles for FAQ page */
+
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.faq h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq h2 {
+    color: #99318d;
+    margin-bottom: 15px;
+}
+
+.faq p {
+    background: #f4debf;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* styles for Booking confirmation page */
+.booking-confirmation {
+            background-color: #f4debf;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+        }
+.booking_btn{
+	    display: inline-block;
+            padding: 15px 20px;
+            background-color: #972c8b;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+.booking_btn:hover {
+            background-color: #dcb2c1;
+        }
+
+/* styles for account page */
+
+.account-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        /* Form Styling */
+        .account-form label, .account-form input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .account-form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .account-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+/* General styles for smaller screens */
+
+@media screen and (max-width: 768px) {
+    .navbar ul li {
+        margin: 10px; /* Reduce margin */
+        font-size: 1.2em;
+        padding: 15px 10px;
+    }
+    .navbar{
+        padding: 10px 0;
+    }
+
+    .navbar ul li a {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .testimonialpic, .posterabout {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding-top: 60px; 
+    }
+    .poster {
+        width: 100%;
+        height: auto;
+        display: block;
+        top: 60px; 
+    }
+
+    .title1{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .content h1,
+    #vizha{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    header img {
+        width: 50px; /* Reduce logo size */
+        height: 52px;
+    }
+}
+
+/* Styles for very small screens such as mobile phones */
+@media screen and (max-width: 480px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column; /* Stack the navbar items */
+        align-items: center;
+    }
+
+    .navbar ul li {
+        display: block; /* Display navbar items in block */
+        width: 100%; /* Full width for each item */
+        text-align: center; /* Center the text */
+    }
+
+     .events, .footer-info {
+        flex-direction: column; /* Stack the items vertically */
+    }
+
+    .cardd, .footer about, .footer contact {
+        width: 100%; /* Full width for cards, figures, and footer items */
+        margin-bottom: 20px; /* Add some space between items */
+    }
+
+    .card-content, .event-content {
+        padding: 10px; /* Reduce padding inside cards */
+    }
+    .card-container .cardd{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .upcomingevent {
+        text-align: center;
+    }
+}
+
+.messageSuccess {
+    color: black;
+    background-color: beige;
+    border-radius: 20px;
+    padding: 7px;
+    margin: 15px;
+}
+
+
+.creditsHeading {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
